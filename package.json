@@ -1,0 +1,26 @@
+{
+  "name": "mk-node-mongo-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "export NODE_ENV=development && export DEBUG=app:dev && nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.1.1",
+    "express": "^4.17.1",
+    "helmet": "^3.21.3",
+    "mongodb": "^3.5.5",
+    "mongoose": "^5.9.5",
+    "morgan": "^1.10.0",
+    "yup": "^0.28.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
