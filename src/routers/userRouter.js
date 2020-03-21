@@ -43,7 +43,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.patch("/:id", async (req, res) => {
+router.patch("/:id", userSchemaValidation, async (req, res) => {
   const _id = req.params.id;
   const updates = Object.keys(req.body);
   const allowedUpdates = ["name", "bio"];
