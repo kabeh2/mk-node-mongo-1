@@ -4,7 +4,7 @@ const debug = require("debug")("app:dev");
 const devLogger = async (req, res, next) => {
   try {
     const morganLogger = morgan("tiny");
-    morganLogger(req, res, nex);
+    morganLogger(req, res, next);
   } catch (error) {
     next(error);
   }
